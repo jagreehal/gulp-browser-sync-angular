@@ -1,0 +1,19 @@
+$small: 'small';
+$medium: 'medium';
+$large: 'large';
+
+$s: 30rem !default;
+$m: 48rem !default;
+$l: 64rem !default;
+
+$breakpoints: $small $s, $medium $m, $large $l !default;
+
+@mixin breakpoint($point) {
+  @each $breakpoint in $breakpoints {
+    @if $point == nth($breakpoint, 1) {
+      @media (min-width: nth($breakpoint, 2)) {
+        @content;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../styles/media-queries";
+@import "../../styles/variables";
+
+.message {
+  color: $red;
+
+  @include breakpoint($medium) {
+    color: $yellow;
+  }
+
+  @include breakpoint($large) {
+    color: $green;
+  }
+}
+

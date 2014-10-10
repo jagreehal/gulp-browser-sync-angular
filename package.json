@@ -1,0 +1,22 @@
+{
+  "name": "gulp-browser-sync-angular",
+  "version": "0.0.1",
+  "description": "Gulp boilerplate for angular apps using browser sync",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jag Reehal",
+  "license": "ISC",
+  "devDependencies": {
+      "browser-sync": "^1.5.7",
+      "gulp-autoprefixer": "~1.0.1",
+      "gulp-inject": "^1.0.2",
+      "gulp-jshint": "~1.8.5",
+      "gulp-plumber": "^0.6.6",
+      "gulp-ruby-sass": "~0.7.1",
+      "gulp-run-sequence": "^0.3.2",
+      "jshint-stylish": "~1.0.0",
+      "wiredep": "^1.8.5"
+  }
+}
