@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     inject = require("gulp-inject"),
     jshint = require('gulp-jshint'),
     runSequence = require('gulp-run-sequence'),
-    sass = require('gulp-ruby-sass'),
+    sass = require('gulp-sass'),
     plumber = require('gulp-plumber');
 
 // Browser Sync
@@ -37,9 +37,7 @@ gulp.task('scripts', function(){
 gulp.task('styles', function(){
     return gulp.src('app/styles/main.scss')
         .pipe(plumber())
-        .pipe(sass({
-            style: 'expanded'
-        }))
+        .pipe(sass())
         .pipe(autoprefixer('last 1 version'))
         .pipe(gulp.dest('app/styles'));
 });
